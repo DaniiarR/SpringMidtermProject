@@ -1,0 +1,21 @@
+DROP SCHEMA IF EXISTS `Customers`;
+
+CREATE SCHEMA `Customers`;
+
+use `Customers`;
+
+SET FOREIGN_KEY_CHECKS = 0;
+
+DROP TABLE IF EXISTS `customers`;
+
+CREATE TABLE `customers`(
+`id` int NOT NULL auto_increment,
+`first_name` VARCHAR(45) DEFAULT NULL,
+`last_name` VARCHAR(45) DEFAULT NULL,
+`email_address` VARCHAR(45) DEFAULT NULL,
+`job_title` VARCHAR(45) DEFAULT NULL,
+`mobile_phone` VARCHAR(45) DEFAULT NULL,
+`city` VARCHAR(70) DEFAULT NULL,
+`web_page` VARCHAR(255) DEFAULT NULL,
+PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
